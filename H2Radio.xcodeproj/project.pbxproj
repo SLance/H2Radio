@@ -47,6 +47,7 @@
 		7EAA114E1BA91011008CA596 /* H2RadioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H2RadioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAA11521BA91011008CA596 /* H2RadioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2RadioUITests.swift; sourceTree = "<group>"; };
 		7EAA11541BA91011008CA596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAA11601BA91D96008CA596 /* H2Radio-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "H2Radio-Bridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		7EAA11261BA91010008CA596 = {
 			isa = PBXGroup;
 			children = (
+				7EAA11601BA91D96008CA596 /* H2Radio-Bridge-Header.h */,
 				7EAA11311BA91010008CA596 /* H2Radio */,
 				7EAA11461BA91011008CA596 /* H2RadioTests */,
 				7EAA11511BA91011008CA596 /* H2RadioUITests */,
@@ -400,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2Radio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "H2Radio-Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -411,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2Radio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "H2Radio-Bridge-Header.h";
 			};
 			name = Release;
 		};
@@ -481,6 +485,7 @@
 				7EAA11591BA91011008CA596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EAA115A1BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2RadioTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +494,7 @@
 				7EAA115C1BA91011008CA596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EAA115D1BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2RadioUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +503,7 @@
 				7EAA115F1BA91011008CA596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
