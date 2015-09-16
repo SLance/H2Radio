@@ -24,6 +24,13 @@
 		7EAA11A01BA9466E008CA596 /* STKLocalFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11951BA9466E008CA596 /* STKLocalFileDataSource.m */; settings = {ASSET_TAGS = (); }; };
 		7EAA11A11BA9466E008CA596 /* STKQueueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11971BA9466E008CA596 /* STKQueueEntry.m */; settings = {ASSET_TAGS = (); }; };
 		7EAA11A51BA96B73008CA596 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A41BA96B73008CA596 /* BaseService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11AD1BA96C0D008CA596 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A61BA96C0D008CA596 /* AlbumService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11AE1BA96C0D008CA596 /* ArtistAlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A71BA96C0D008CA596 /* ArtistAlbumService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11AF1BA96C0D008CA596 /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A81BA96C0D008CA596 /* ArtistService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B01BA96C0D008CA596 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A91BA96C0D008CA596 /* MusicService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B11BA96C0D008CA596 /* MVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11AA1BA96C0D008CA596 /* MVService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B21BA96C0D008CA596 /* PlaylistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11AB1BA96C0D008CA596 /* PlaylistService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B31BA96C0D008CA596 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11AC1BA96C0D008CA596 /* SearchService.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +85,13 @@
 		7EAA11971BA9466E008CA596 /* STKQueueEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKQueueEntry.m; sourceTree = "<group>"; };
 		7EAA11981BA9466E008CA596 /* StreamingKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StreamingKit-Prefix.pch"; sourceTree = "<group>"; };
 		7EAA11A41BA96B73008CA596 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		7EAA11A61BA96C0D008CA596 /* AlbumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		7EAA11A71BA96C0D008CA596 /* ArtistAlbumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistAlbumService.swift; sourceTree = "<group>"; };
+		7EAA11A81BA96C0D008CA596 /* ArtistService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
+		7EAA11A91BA96C0D008CA596 /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		7EAA11AA1BA96C0D008CA596 /* MVService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVService.swift; sourceTree = "<group>"; };
+		7EAA11AB1BA96C0D008CA596 /* PlaylistService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistService.swift; sourceTree = "<group>"; };
+		7EAA11AC1BA96C0D008CA596 /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +212,13 @@
 			isa = PBXGroup;
 			children = (
 				7EAA11A41BA96B73008CA596 /* BaseService.swift */,
+				7EAA11AC1BA96C0D008CA596 /* SearchService.swift */,
+				7EAA11AB1BA96C0D008CA596 /* PlaylistService.swift */,
+				7EAA11A81BA96C0D008CA596 /* ArtistService.swift */,
+				7EAA11A71BA96C0D008CA596 /* ArtistAlbumService.swift */,
+				7EAA11A61BA96C0D008CA596 /* AlbumService.swift */,
+				7EAA11A91BA96C0D008CA596 /* MusicService.swift */,
+				7EAA11AA1BA96C0D008CA596 /* MVService.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -339,18 +360,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EAA11AD1BA96C0D008CA596 /* AlbumService.swift in Sources */,
 				7EAA119A1BA9466E008CA596 /* STKAudioPlayer.m in Sources */,
 				7EAA119D1BA9466E008CA596 /* STKDataSource.m in Sources */,
 				7EAA119B1BA9466E008CA596 /* STKAutoRecoveringHTTPDataSource.m in Sources */,
 				7EAA119F1BA9466E008CA596 /* STKHTTPDataSource.m in Sources */,
+				7EAA11B11BA96C0D008CA596 /* MVService.swift in Sources */,
 				7EAA11351BA91010008CA596 /* ViewController.swift in Sources */,
 				7EAA11991BA9466E008CA596 /* NSMutableArray+STKAudioPlayer.m in Sources */,
 				7EAA11A11BA9466E008CA596 /* STKQueueEntry.m in Sources */,
+				7EAA11AF1BA96C0D008CA596 /* ArtistService.swift in Sources */,
+				7EAA11AE1BA96C0D008CA596 /* ArtistAlbumService.swift in Sources */,
 				7EAA11331BA91010008CA596 /* AppDelegate.swift in Sources */,
 				7EAA11A51BA96B73008CA596 /* BaseService.swift in Sources */,
+				7EAA11B31BA96C0D008CA596 /* SearchService.swift in Sources */,
+				7EAA11B21BA96C0D008CA596 /* PlaylistService.swift in Sources */,
 				7EAA119C1BA9466E008CA596 /* STKCoreFoundationDataSource.m in Sources */,
 				7EAA119E1BA9466E008CA596 /* STKDataSourceWrapper.m in Sources */,
 				7EAA11A01BA9466E008CA596 /* STKLocalFileDataSource.m in Sources */,
+				7EAA11B01BA96C0D008CA596 /* MusicService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
