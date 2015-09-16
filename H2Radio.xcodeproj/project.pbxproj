@@ -127,13 +127,15 @@
 		7EAA11311BA91010008CA596 /* H2Radio */ = {
 			isa = PBXGroup;
 			children = (
+				7EAA11A21BA96A88008CA596 /* Service */,
+				7EAA11A31BA96A92008CA596 /* Model */,
+				7EAA11841BA9466D008CA596 /* Vendor */,
 				7EAA11321BA91010008CA596 /* AppDelegate.swift */,
 				7EAA11341BA91010008CA596 /* ViewController.swift */,
 				7EAA11361BA91010008CA596 /* Main.storyboard */,
 				7EAA11391BA91010008CA596 /* Assets.xcassets */,
 				7EAA113B1BA91010008CA596 /* LaunchScreen.storyboard */,
 				7EAA113E1BA91010008CA596 /* Info.plist */,
-				7EAA11841BA9466D008CA596 /* Vendor */,
 			);
 			path = H2Radio;
 			sourceTree = "<group>";
@@ -188,6 +190,20 @@
 				7EAA11981BA9466E008CA596 /* StreamingKit-Prefix.pch */,
 			);
 			path = StreamingKit;
+			sourceTree = "<group>";
+		};
+		7EAA11A21BA96A88008CA596 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		7EAA11A31BA96A92008CA596 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
