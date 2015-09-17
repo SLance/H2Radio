@@ -240,6 +240,7 @@
 				7EAA112B1BA91010008CA596 /* Sources */,
 				7EAA112C1BA91010008CA596 /* Frameworks */,
 				7EAA112D1BA91010008CA596 /* Resources */,
+				7EAA11B41BA97B66008CA596 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -354,6 +355,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EAA11B41BA97B66008CA596 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REV=`date +%y%m%d`.`git rev-list dev | wc -l | awk '{print $1}'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${REV}\" \"${TARGET_BUILD_DIR}\"/${INFOPLIST_PATH}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7EAA112B1BA91010008CA596 /* Sources */ = {

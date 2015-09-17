@@ -3,7 +3,7 @@
 //  H2Radio
 //
 //  Created by Lance on 15/9/14.
-//  Copyright © 2015年 Soul. All rights reserved.
+//  Copyright © 2015年 Lance. All rights reserved.
 //
 
 #ifndef H2Radio_Bridge_Header_h
