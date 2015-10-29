@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioPlayerDelegate, MusicServiceDelegate {
+class ViewController: UIViewController, AVAudioPlayerDelegate, STKAudioPlayerDelegate, MusicServiceDelegate {
 
     var player = STKAudioPlayer()
     var avPlayer = AVAudioPlayer()
@@ -19,21 +19,26 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, MusicServiceDeleg
     //    let fileURL: NSURL = NSBundle.mainBundle().URLForResource("Hotel California", withExtension: "mp3")!
     var url: NSURL = NSURL(string: "http://m2.music.126.net/ru4rRgSHFFixWfQZVtPSMQ==/3249056861081712.mp3")!
     
+    var timer = NSTimer()
+    
     
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var musicIdTextField: UITextField!
+    @IBOutlet weak var musicSlider: UISlider!
     @IBOutlet weak var musicLyricTextView: UITextView!
     
     var musicService = MusicService()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.player.delegate = self
         self.musicService.delegate = self
     }
     
     deinit {
         self.musicService.delegate = nil
+        self.player.delegate = nil
     }
     
     override func viewDidLoad() {
@@ -62,6 +67,32 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, MusicServiceDeleg
         print("stop...")
     }
     
+    func audioPlayer(audioPlayer: STKAudioPlayer!, didStartPlayingQueueItemId queueItemId: NSObject!) {
+        print("start...")
+    }
+    
+    func audioPlayer(audioPlayer: STKAudioPlayer!, didFinishBufferingSourceWithQueueItemId queueItemId: NSObject!) {
+        
+    }
+    
+    func audioPlayer(audioPlayer: STKAudioPlayer!, stateChanged state: STKAudioPlayerState, previousState: STKAudioPlayerState) {
+        if state == STKAudioPlayerStatePaused || state == STKAudioPlayerStateStopped {
+            self.playButton.setTitle("Play", forState: .Normal)
+            self.timer.invalidate()
+        } else if state == STKAudioPlayerStatePlaying {
+            self.playButton.setTitle("Pause", forState: .Normal)
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimer:"), userInfo: nil, repeats: true)
+        }
+    }
+    
+    func audioPlayer(audioPlayer: STKAudioPlayer!, didFinishPlayingQueueItemId queueItemId: NSObject!, withReason stopReason: STKAudioPlayerStopReason, andProgress progress: Double, andDuration duration: Double) {
+        print("stop...")
+    }
+    
+    func audioPlayer(audioPlayer: STKAudioPlayer!, unexpectedError errorCode: STKAudioPlayerErrorCode) {
+        
+    }
+    
     @IBAction func toggleButton_touch(sender: AnyObject) {
 //        let soundID: SystemSoundID = 1001
 //        AudioServicesPlaySystemSound(soundID)
@@ -73,13 +104,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, MusicServiceDeleg
 //            sender.setTitle("Pause", forState: .Normal)
 //        }
         if self.player.state == STKAudioPlayerStateReady || self.player.state == STKAudioPlayerStateStopped {
-            self.musicService.musicDetail(self.musicIdTextField.text!)
-        } else if (self.player.state == STKAudioPlayerStatePaused) {
-            self.player.resume()
-            self.playButton.setTitle("Pause", forState: .Normal)
+            if !self.musicIdTextField.text!.isEmpty {
+                self.musicService.musicDetail(self.musicIdTextField.text!)
+            } else {
+                UIAlertView(title: "温馨提示", message: "请输出音乐ID", delegate: nil, cancelButtonTitle: "OK").show()
+            }
         } else if self.player.state == STKAudioPlayerStatePlaying {
             self.player.pause()
-            self.playButton.setTitle("Play", forState: .Normal)
+        } else if self.player.state == STKAudioPlayerStatePaused {
+            self.player.resume()
         }
     }
     
@@ -95,11 +128,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, MusicServiceDeleg
         self.musicService.musicLyric(self.musicIdTextField.text!)
     }
     
-    func didReceiveMusicInfo(musicInfo: String?) {
-        if musicInfo != nil {
+    func didReceiveMusicInfo(musicInfo: AnyObject?) {
+        let music = musicInfo as? NSDictionary
+        if music != nil {
 //            self.player.playURL(self.url)
-            self.player.playURL(NSURL(string: musicInfo!))
-            self.playButton.setTitle("Pause", forState: .Normal)
+            self.player.playURL(NSURL(string: music!["mp3Url"] as! String))
+            self.musicSlider.maximumValue = music!["duration"] as! Float / 1000.0
             
             self.musicService.musicLyric(self.musicIdTextField.text!)
         }
@@ -115,6 +149,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, MusicServiceDeleg
                 print(error)
             }
         }
+    }
+    
+    func updateTimer(timer: NSTimer) {
+        self.musicSlider.setValue(Float(self.player.progress), animated: true)
     }
 }
 

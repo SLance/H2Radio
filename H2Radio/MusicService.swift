@@ -22,8 +22,7 @@ class MusicService: BaseService {
             let songs = (data as? NSDictionary)?["songs"] as? NSArray
             if songs?.count > 0 {
                 let musicInfo = (songs?[0] as? NSDictionary)!
-                let mp3Url = musicInfo["mp3Url"]
-                delegate?.didReceiveMusicInfo?(mp3Url as? String)
+                delegate?.didReceiveMusicInfo?(musicInfo)
             } else {
                 delegate?.didReceiveMusicInfo?(nil)
             }
@@ -43,7 +42,7 @@ class MusicService: BaseService {
 
 @objc protocol MusicServiceDelegate : ServiceDelegate {
     
-    optional func didReceiveMusicInfo(musicInfo: String?)
+    optional func didReceiveMusicInfo(musicInfo: AnyObject?)
     
     optional func didReceiveMusicLyric(musicLyric: String?)
 }
