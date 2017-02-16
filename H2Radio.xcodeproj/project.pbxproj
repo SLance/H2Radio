@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EAA11331BA91010008CA596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11321BA91010008CA596 /* AppDelegate.swift */; };
+		7EAA11351BA91010008CA596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11341BA91010008CA596 /* ViewController.swift */; };
+		7EAA11381BA91010008CA596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA11361BA91010008CA596 /* Main.storyboard */; };
+		7EAA113A1BA91010008CA596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA11391BA91010008CA596 /* Assets.xcassets */; };
+		7EAA113D1BA91010008CA596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA113B1BA91010008CA596 /* LaunchScreen.storyboard */; };
+		7EAA11481BA91011008CA596 /* H2RadioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11471BA91011008CA596 /* H2RadioTests.swift */; };
+		7EAA11531BA91011008CA596 /* H2RadioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11521BA91011008CA596 /* H2RadioUITests.swift */; };
+		7EAA11991BA9466E008CA596 /* NSMutableArray+STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11871BA9466D008CA596 /* NSMutableArray+STKAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA119A1BA9466E008CA596 /* STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11891BA9466D008CA596 /* STKAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA119B1BA9466E008CA596 /* STKAutoRecoveringHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA118B1BA9466D008CA596 /* STKAutoRecoveringHTTPDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA119C1BA9466E008CA596 /* STKCoreFoundationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA118D1BA9466D008CA596 /* STKCoreFoundationDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA119D1BA9466E008CA596 /* STKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA118F1BA9466D008CA596 /* STKDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA119E1BA9466E008CA596 /* STKDataSourceWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11911BA9466D008CA596 /* STKDataSourceWrapper.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA119F1BA9466E008CA596 /* STKHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11931BA9466D008CA596 /* STKHTTPDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA11A01BA9466E008CA596 /* STKLocalFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11951BA9466E008CA596 /* STKLocalFileDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA11A11BA9466E008CA596 /* STKQueueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11971BA9466E008CA596 /* STKQueueEntry.m */; settings = {ASSET_TAGS = (); }; };
+		7EAA11A51BA96B73008CA596 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A41BA96B73008CA596 /* BaseService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11AD1BA96C0D008CA596 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A61BA96C0D008CA596 /* AlbumService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11AE1BA96C0D008CA596 /* ArtistAlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A71BA96C0D008CA596 /* ArtistAlbumService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11AF1BA96C0D008CA596 /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A81BA96C0D008CA596 /* ArtistService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B01BA96C0D008CA596 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11A91BA96C0D008CA596 /* MusicService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B11BA96C0D008CA596 /* MVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11AA1BA96C0D008CA596 /* MVService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B21BA96C0D008CA596 /* PlaylistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11AB1BA96C0D008CA596 /* PlaylistService.swift */; settings = {ASSET_TAGS = (); }; };
+		7EAA11B31BA96C0D008CA596 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA11AC1BA96C0D008CA596 /* SearchService.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EAA11441BA91011008CA596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAA11271BA91010008CA596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EAA112E1BA91010008CA596;
+			remoteInfo = H2Radio;
+		};
+		7EAA114F1BA91011008CA596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAA11271BA91010008CA596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EAA112E1BA91010008CA596;
+			remoteInfo = H2Radio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EAA112F1BA91010008CA596 /* H2Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H2Radio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAA11321BA91010008CA596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EAA11341BA91010008CA596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EAA11371BA91010008CA596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EAA11391BA91010008CA596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EAA113C1BA91010008CA596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EAA113E1BA91010008CA596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAA11431BA91011008CA596 /* H2RadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H2RadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAA11471BA91011008CA596 /* H2RadioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2RadioTests.swift; sourceTree = "<group>"; };
+		7EAA11491BA91011008CA596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAA114E1BA91011008CA596 /* H2RadioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H2RadioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAA11521BA91011008CA596 /* H2RadioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2RadioUITests.swift; sourceTree = "<group>"; };
+		7EAA11541BA91011008CA596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAA11601BA91D96008CA596 /* H2Radio-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "H2Radio-Bridge-Header.h"; sourceTree = "<group>"; };
+		7EAA11861BA9466D008CA596 /* NSMutableArray+STKAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+STKAudioPlayer.h"; sourceTree = "<group>"; };
+		7EAA11871BA9466D008CA596 /* NSMutableArray+STKAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+STKAudioPlayer.m"; sourceTree = "<group>"; };
+		7EAA11881BA9466D008CA596 /* STKAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAudioPlayer.h; sourceTree = "<group>"; };
+		7EAA11891BA9466D008CA596 /* STKAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAudioPlayer.m; sourceTree = "<group>"; };
+		7EAA118A1BA9466D008CA596 /* STKAutoRecoveringHTTPDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAutoRecoveringHTTPDataSource.h; sourceTree = "<group>"; };
+		7EAA118B1BA9466D008CA596 /* STKAutoRecoveringHTTPDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAutoRecoveringHTTPDataSource.m; sourceTree = "<group>"; };
+		7EAA118C1BA9466D008CA596 /* STKCoreFoundationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKCoreFoundationDataSource.h; sourceTree = "<group>"; };
+		7EAA118D1BA9466D008CA596 /* STKCoreFoundationDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKCoreFoundationDataSource.m; sourceTree = "<group>"; };
+		7EAA118E1BA9466D008CA596 /* STKDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKDataSource.h; sourceTree = "<group>"; };
+		7EAA118F1BA9466D008CA596 /* STKDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKDataSource.m; sourceTree = "<group>"; };
+		7EAA11901BA9466D008CA596 /* STKDataSourceWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKDataSourceWrapper.h; sourceTree = "<group>"; };
+		7EAA11911BA9466D008CA596 /* STKDataSourceWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKDataSourceWrapper.m; sourceTree = "<group>"; };
+		7EAA11921BA9466D008CA596 /* STKHTTPDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKHTTPDataSource.h; sourceTree = "<group>"; };
+		7EAA11931BA9466D008CA596 /* STKHTTPDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKHTTPDataSource.m; sourceTree = "<group>"; };
+		7EAA11941BA9466E008CA596 /* STKLocalFileDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKLocalFileDataSource.h; sourceTree = "<group>"; };
+		7EAA11951BA9466E008CA596 /* STKLocalFileDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKLocalFileDataSource.m; sourceTree = "<group>"; };
+		7EAA11961BA9466E008CA596 /* STKQueueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKQueueEntry.h; sourceTree = "<group>"; };
+		7EAA11971BA9466E008CA596 /* STKQueueEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKQueueEntry.m; sourceTree = "<group>"; };
+		7EAA11981BA9466E008CA596 /* StreamingKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StreamingKit-Prefix.pch"; sourceTree = "<group>"; };
+		7EAA11A41BA96B73008CA596 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		7EAA11A61BA96C0D008CA596 /* AlbumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		7EAA11A71BA96C0D008CA596 /* ArtistAlbumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistAlbumService.swift; sourceTree = "<group>"; };
+		7EAA11A81BA96C0D008CA596 /* ArtistService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
+		7EAA11A91BA96C0D008CA596 /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		7EAA11AA1BA96C0D008CA596 /* MVService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVService.swift; sourceTree = "<group>"; };
+		7EAA11AB1BA96C0D008CA596 /* PlaylistService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistService.swift; sourceTree = "<group>"; };
+		7EAA11AC1BA96C0D008CA596 /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EAA112C1BA91010008CA596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAA11401BA91011008CA596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAA114B1BA91011008CA596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EAA11261BA91010008CA596 = {
+			isa = PBXGroup;
+			children = (
+				7EAA11601BA91D96008CA596 /* H2Radio-Bridge-Header.h */,
+				7EAA11311BA91010008CA596 /* H2Radio */,
+				7EAA11461BA91011008CA596 /* H2RadioTests */,
+				7EAA11511BA91011008CA596 /* H2RadioUITests */,
+				7EAA11301BA91010008CA596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EAA11301BA91010008CA596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA112F1BA91010008CA596 /* H2Radio.app */,
+				7EAA11431BA91011008CA596 /* H2RadioTests.xctest */,
+				7EAA114E1BA91011008CA596 /* H2RadioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EAA11311BA91010008CA596 /* H2Radio */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA11A21BA96A88008CA596 /* Service */,
+				7EAA11A31BA96A92008CA596 /* Model */,
+				7EAA11841BA9466D008CA596 /* Vendor */,
+				7EAA11321BA91010008CA596 /* AppDelegate.swift */,
+				7EAA11341BA91010008CA596 /* ViewController.swift */,
+				7EAA11361BA91010008CA596 /* Main.storyboard */,
+				7EAA11391BA91010008CA596 /* Assets.xcassets */,
+				7EAA113B1BA91010008CA596 /* LaunchScreen.storyboard */,
+				7EAA113E1BA91010008CA596 /* Info.plist */,
+			);
+			path = H2Radio;
+			sourceTree = "<group>";
+		};
+		7EAA11461BA91011008CA596 /* H2RadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA11471BA91011008CA596 /* H2RadioTests.swift */,
+				7EAA11491BA91011008CA596 /* Info.plist */,
+			);
+			path = H2RadioTests;
+			sourceTree = "<group>";
+		};
+		7EAA11511BA91011008CA596 /* H2RadioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA11521BA91011008CA596 /* H2RadioUITests.swift */,
+				7EAA11541BA91011008CA596 /* Info.plist */,
+			);
+			path = H2RadioUITests;
+			sourceTree = "<group>";
+		};
+		7EAA11841BA9466D008CA596 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA11851BA9466D008CA596 /* StreamingKit */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		7EAA11851BA9466D008CA596 /* StreamingKit */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA11861BA9466D008CA596 /* NSMutableArray+STKAudioPlayer.h */,
+				7EAA11871BA9466D008CA596 /* NSMutableArray+STKAudioPlayer.m */,
+				7EAA11881BA9466D008CA596 /* STKAudioPlayer.h */,
+				7EAA11891BA9466D008CA596 /* STKAudioPlayer.m */,
+				7EAA118A1BA9466D008CA596 /* STKAutoRecoveringHTTPDataSource.h */,
+				7EAA118B1BA9466D008CA596 /* STKAutoRecoveringHTTPDataSource.m */,
+				7EAA118C1BA9466D008CA596 /* STKCoreFoundationDataSource.h */,
+				7EAA118D1BA9466D008CA596 /* STKCoreFoundationDataSource.m */,
+				7EAA118E1BA9466D008CA596 /* STKDataSource.h */,
+				7EAA118F1BA9466D008CA596 /* STKDataSource.m */,
+				7EAA11901BA9466D008CA596 /* STKDataSourceWrapper.h */,
+				7EAA11911BA9466D008CA596 /* STKDataSourceWrapper.m */,
+				7EAA11921BA9466D008CA596 /* STKHTTPDataSource.h */,
+				7EAA11931BA9466D008CA596 /* STKHTTPDataSource.m */,
+				7EAA11941BA9466E008CA596 /* STKLocalFileDataSource.h */,
+				7EAA11951BA9466E008CA596 /* STKLocalFileDataSource.m */,
+				7EAA11961BA9466E008CA596 /* STKQueueEntry.h */,
+				7EAA11971BA9466E008CA596 /* STKQueueEntry.m */,
+				7EAA11981BA9466E008CA596 /* StreamingKit-Prefix.pch */,
+			);
+			path = StreamingKit;
+			sourceTree = "<group>";
+		};
+		7EAA11A21BA96A88008CA596 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA11A41BA96B73008CA596 /* BaseService.swift */,
+				7EAA11AC1BA96C0D008CA596 /* SearchService.swift */,
+				7EAA11AB1BA96C0D008CA596 /* PlaylistService.swift */,
+				7EAA11A81BA96C0D008CA596 /* ArtistService.swift */,
+				7EAA11A71BA96C0D008CA596 /* ArtistAlbumService.swift */,
+				7EAA11A61BA96C0D008CA596 /* AlbumService.swift */,
+				7EAA11A91BA96C0D008CA596 /* MusicService.swift */,
+				7EAA11AA1BA96C0D008CA596 /* MVService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		7EAA11A31BA96A92008CA596 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EAA112E1BA91010008CA596 /* H2Radio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAA11571BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2Radio" */;
+			buildPhases = (
+				7EAA112B1BA91010008CA596 /* Sources */,
+				7EAA112C1BA91010008CA596 /* Frameworks */,
+				7EAA112D1BA91010008CA596 /* Resources */,
+				7EAA11B41BA97B66008CA596 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H2Radio;
+			productName = H2Radio;
+			productReference = 7EAA112F1BA91010008CA596 /* H2Radio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EAA11421BA91011008CA596 /* H2RadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAA115A1BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2RadioTests" */;
+			buildPhases = (
+				7EAA113F1BA91011008CA596 /* Sources */,
+				7EAA11401BA91011008CA596 /* Frameworks */,
+				7EAA11411BA91011008CA596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EAA11451BA91011008CA596 /* PBXTargetDependency */,
+			);
+			name = H2RadioTests;
+			productName = H2RadioTests;
+			productReference = 7EAA11431BA91011008CA596 /* H2RadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EAA114D1BA91011008CA596 /* H2RadioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAA115D1BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2RadioUITests" */;
+			buildPhases = (
+				7EAA114A1BA91011008CA596 /* Sources */,
+				7EAA114B1BA91011008CA596 /* Frameworks */,
+				7EAA114C1BA91011008CA596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EAA11501BA91011008CA596 /* PBXTargetDependency */,
+			);
+			name = H2RadioUITests;
+			productName = H2RadioUITests;
+			productReference = 7EAA114E1BA91011008CA596 /* H2RadioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EAA11271BA91010008CA596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Lance;
+				TargetAttributes = {
+					7EAA112E1BA91010008CA596 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7EAA11421BA91011008CA596 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7EAA112E1BA91010008CA596;
+					};
+					7EAA114D1BA91011008CA596 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7EAA112E1BA91010008CA596;
+					};
+				};
+			};
+			buildConfigurationList = 7EAA112A1BA91010008CA596 /* Build configuration list for PBXProject "H2Radio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EAA11261BA91010008CA596;
+			productRefGroup = 7EAA11301BA91010008CA596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EAA112E1BA91010008CA596 /* H2Radio */,
+				7EAA11421BA91011008CA596 /* H2RadioTests */,
+				7EAA114D1BA91011008CA596 /* H2RadioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EAA112D1BA91010008CA596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAA113D1BA91010008CA596 /* LaunchScreen.storyboard in Resources */,
+				7EAA113A1BA91010008CA596 /* Assets.xcassets in Resources */,
+				7EAA11381BA91010008CA596 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAA11411BA91011008CA596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAA114C1BA91011008CA596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EAA11B41BA97B66008CA596 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REV=`date +%y%m%d`.`git rev-list dev | wc -l | awk '{print $1}'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${REV}\" \"${TARGET_BUILD_DIR}\"/${INFOPLIST_PATH}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EAA112B1BA91010008CA596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAA11AD1BA96C0D008CA596 /* AlbumService.swift in Sources */,
+				7EAA119A1BA9466E008CA596 /* STKAudioPlayer.m in Sources */,
+				7EAA119D1BA9466E008CA596 /* STKDataSource.m in Sources */,
+				7EAA119B1BA9466E008CA596 /* STKAutoRecoveringHTTPDataSource.m in Sources */,
+				7EAA119F1BA9466E008CA596 /* STKHTTPDataSource.m in Sources */,
+				7EAA11B11BA96C0D008CA596 /* MVService.swift in Sources */,
+				7EAA11351BA91010008CA596 /* ViewController.swift in Sources */,
+				7EAA11991BA9466E008CA596 /* NSMutableArray+STKAudioPlayer.m in Sources */,
+				7EAA11A11BA9466E008CA596 /* STKQueueEntry.m in Sources */,
+				7EAA11AF1BA96C0D008CA596 /* ArtistService.swift in Sources */,
+				7EAA11AE1BA96C0D008CA596 /* ArtistAlbumService.swift in Sources */,
+				7EAA11331BA91010008CA596 /* AppDelegate.swift in Sources */,
+				7EAA11A51BA96B73008CA596 /* BaseService.swift in Sources */,
+				7EAA11B31BA96C0D008CA596 /* SearchService.swift in Sources */,
+				7EAA11B21BA96C0D008CA596 /* PlaylistService.swift in Sources */,
+				7EAA119C1BA9466E008CA596 /* STKCoreFoundationDataSource.m in Sources */,
+				7EAA119E1BA9466E008CA596 /* STKDataSourceWrapper.m in Sources */,
+				7EAA11A01BA9466E008CA596 /* STKLocalFileDataSource.m in Sources */,
+				7EAA11B01BA96C0D008CA596 /* MusicService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAA113F1BA91011008CA596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAA11481BA91011008CA596 /* H2RadioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAA114A1BA91011008CA596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAA11531BA91011008CA596 /* H2RadioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EAA11451BA91011008CA596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EAA112E1BA91010008CA596 /* H2Radio */;
+			targetProxy = 7EAA11441BA91011008CA596 /* PBXContainerItemProxy */;
+		};
+		7EAA11501BA91011008CA596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EAA112E1BA91010008CA596 /* H2Radio */;
+			targetProxy = 7EAA114F1BA91011008CA596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EAA11361BA91010008CA596 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EAA11371BA91010008CA596 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EAA113B1BA91010008CA596 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EAA113C1BA91010008CA596 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EAA11551BA91011008CA596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EAA11561BA91011008CA596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EAA11581BA91011008CA596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = H2Radio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2Radio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "H2Radio-Bridge-Header.h";
+			};
+			name = Debug;
+		};
+		7EAA11591BA91011008CA596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = H2Radio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2Radio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "H2Radio-Bridge-Header.h";
+			};
+			name = Release;
+		};
+		7EAA115B1BA91011008CA596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = H2RadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2RadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H2Radio.app/H2Radio";
+			};
+			name = Debug;
+		};
+		7EAA115C1BA91011008CA596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = H2RadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2RadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H2Radio.app/H2Radio";
+			};
+			name = Release;
+		};
+		7EAA115E1BA91011008CA596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = H2RadioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2RadioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = H2Radio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7EAA115F1BA91011008CA596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = H2RadioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lance.H2RadioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = H2Radio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EAA112A1BA91010008CA596 /* Build configuration list for PBXProject "H2Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAA11551BA91011008CA596 /* Debug */,
+				7EAA11561BA91011008CA596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EAA11571BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAA11581BA91011008CA596 /* Debug */,
+				7EAA11591BA91011008CA596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EAA115A1BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2RadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAA115B1BA91011008CA596 /* Debug */,
+				7EAA115C1BA91011008CA596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EAA115D1BA91011008CA596 /* Build configuration list for PBXNativeTarget "H2RadioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAA115E1BA91011008CA596 /* Debug */,
+				7EAA115F1BA91011008CA596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EAA11271BA91010008CA596 /* Project object */;
+}

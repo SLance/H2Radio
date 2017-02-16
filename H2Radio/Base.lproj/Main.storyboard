@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="H2Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wqr-7Z-cW2">
+                                <rect key="frame" x="20" y="184" width="560" height="408"/>
+                                <animations/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ce-yr-p58">
+                                <rect key="frame" x="265" y="28" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="toggleButton_touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yj4-P6-3aA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gW2-Vj-Ltz">
+                                <rect key="frame" x="303" y="28" width="32" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButton_touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0EH-EF-DiW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TX9-Rj-p3X">
+                                <rect key="frame" x="285" y="66" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="API"/>
+                                <connections>
+                                    <action selector="apiButton_touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHX-Xc-SJX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fkv-SD-bNe">
+                                <rect key="frame" x="227" y="104" width="146" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="k1l-oJ-Ozi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yr9-lw-ZoO">
+                                <rect key="frame" x="18" y="146" width="564" height="31"/>
+                                <animations/>
+                            </slider>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wqr-7Z-cW2" secondAttribute="trailing" id="1rv-MG-Mbg"/>
+                            <constraint firstItem="TX9-Rj-p3X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ze-jL-GpC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wqr-7Z-cW2" secondAttribute="leading" id="Bn6-i2-IaO"/>
+                            <constraint firstItem="fkv-SD-bNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CXH-k2-eoG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yr9-lw-ZoO" secondAttribute="trailing" id="DI7-Ke-nWF"/>
+                            <constraint firstItem="8ce-yr-p58" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-257" id="DTv-7I-uU4"/>
+                            <constraint firstItem="TX9-Rj-p3X" firstAttribute="top" secondItem="8ce-yr-p58" secondAttribute="bottom" constant="8" id="Hkc-ML-caJ"/>
+                            <constraint firstItem="8ce-yr-p58" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-20" id="IFO-em-ryd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wqr-7Z-cW2" secondAttribute="bottom" constant="8" id="OEw-1l-Z1G"/>
+                            <constraint firstItem="gW2-Vj-Ltz" firstAttribute="leading" secondItem="8ce-yr-p58" secondAttribute="trailing" constant="8" id="R4k-um-9dq"/>
+                            <constraint firstItem="wqr-7Z-cW2" firstAttribute="top" secondItem="yr9-lw-ZoO" secondAttribute="bottom" constant="8" id="Wz6-tw-YU9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yr9-lw-ZoO" secondAttribute="leading" id="coc-IZ-9J2"/>
+                            <constraint firstItem="fkv-SD-bNe" firstAttribute="top" secondItem="TX9-Rj-p3X" secondAttribute="bottom" constant="8" id="dJW-pJ-8PH"/>
+                            <constraint firstItem="yr9-lw-ZoO" firstAttribute="top" secondItem="fkv-SD-bNe" secondAttribute="bottom" constant="12" id="tO3-aH-dX4"/>
+                            <constraint firstItem="gW2-Vj-Ltz" firstAttribute="baseline" secondItem="8ce-yr-p58" secondAttribute="baseline" id="yWJ-fV-4Wf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="musicIdTextField" destination="fkv-SD-bNe" id="lCX-U5-R6Z"/>
+                        <outlet property="musicLyricTextView" destination="wqr-7Z-cW2" id="3fr-r7-JP6"/>
+                        <outlet property="musicSlider" destination="yr9-lw-ZoO" id="2MK-Pv-e49"/>
+                        <outlet property="playButton" destination="8ce-yr-p58" id="xcw-8F-OgX"/>
+                        <outlet property="stopButton" destination="gW2-Vj-Ltz" id="TLc-wJ-Csl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="386"/>
+        </scene>
+    </scenes>
+</document>
